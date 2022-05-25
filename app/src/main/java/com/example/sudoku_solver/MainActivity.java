@@ -37,47 +37,47 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void BTNOnePress(View view) {
-        gameBoardSolver.setNumberPos(1);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),1);
         gameBoard.invalidate();
     }
 
     public void BTNTwoPress(View view) {
-        gameBoardSolver.setNumberPos(2);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),2);
         gameBoard.invalidate();
     }
 
     public void BTNThreePress(View view) {
-        gameBoardSolver.setNumberPos(3);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),3);
         gameBoard.invalidate();
     }
 
     public void BTNFourPress(View view) {
-        gameBoardSolver.setNumberPos(4);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),4);
         gameBoard.invalidate();
     }
 
     public void BTNFivePress(View view) {
-        gameBoardSolver.setNumberPos(5);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),5);
         gameBoard.invalidate();
     }
 
     public void BTNSixPress(View view) {
-        gameBoardSolver.setNumberPos(6);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),6);
         gameBoard.invalidate();
     }
 
     public void BTNSevenPress(View view) {
-        gameBoardSolver.setNumberPos(7);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),7);
         gameBoard.invalidate();
     }
 
     public void BTNEightPress(View view) {
-        gameBoardSolver.setNumberPos(8);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),8);
         gameBoard.invalidate();
     }
 
     public void BTNNinePress(View view) {
-        gameBoardSolver.setNumberPos(9);
+        gameBoardSolver.setNumberPos(this.getBaseContext(),9);
         gameBoard.invalidate();
     }
 

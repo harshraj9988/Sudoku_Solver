@@ -15,6 +15,8 @@ import androidx.annotation.Nullable;
 
 public class SudokuBoard extends View {
 
+
+
     private final int boardColor;
     private final int cellFillColor;
     private final int cellsHighlightColor;

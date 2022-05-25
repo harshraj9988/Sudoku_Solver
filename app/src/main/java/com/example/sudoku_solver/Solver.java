@@ -1,14 +1,20 @@
 package com.example.sudoku_solver;
 
+
+import android.content.Context;
+import android.widget.Toast;
+
 public class Solver {
     int[][] board;
 
     int selected_row;
     int selected_column;
 
+
     Solver() {
         selected_row = -1;
         selected_column = -1;
+
 
         board = new int[9][9];
 
@@ -21,12 +27,16 @@ public class Solver {
     }
 
     //adds an user input number
-    public void setNumberPos(int num) {
+    public void setNumberPos(Context mContext,int num) {
         if (this.selected_row != -1 && this.selected_column != -1) {
             if (this.board[this.selected_row - 1][this.selected_column - 1] == num) {
                 this.board[this.selected_row - 1][this.selected_column - 1] = 0;
-            } else {
+            }else if(isSafe(this.selected_row - 1, this.selected_column - 1, num)){
                 this.board[this.selected_row - 1][this.selected_column - 1] = num;
+            }
+            else {
+                this.board[this.selected_row - 1][this.selected_column - 1] = 0;
+                Toast.makeText(mContext, "Invalid Input", Toast.LENGTH_SHORT).show();
             }
         }
     }
